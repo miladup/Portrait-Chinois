@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300;600&family=Teko:wght@500&display=swap"     rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <title>Portrait chinois</title>
+</head>
+
+<header>
+  
+  <nav>
+    <a class="active" href="#accueil">Si j'étais...</a>
+    <a href="#couleur">une couleur</a>
+    <a href="#animal">un animal</a>
+    <a href="#mot">un mot</a>
+    <a href="#lieu">un lieu</a>
+    <a href="#sport">un sport</a>
+    <a href="#film">un film</a>
+    <a href="#livre">un livre</a>
+  </nav>
+</header>
+
+<body>
+  <section class="accueil" id="accueil">
+    <div>
+      <h1>PORTRAIT CHINOIS</h1>
+      
+      <h2>Mila Duperrier, étudiante en BUT MMI.</h2>
+    </div>
+  </section>
+  <section class="section" id="couleur"></section>
+  <section class="section" id="animal"></section>
+  <section class="section" id="mot"></section>
+  <section class="section" id="lieu"></section>
+  <section class="section" id="sport"></section>
+  <section class="section" id="film"></section>
+  <section class="section" id="livre"></section>
+
+  
+    <section><div class="liste-analogies">
+    </div></section>
+
+  
+  <form>
+      <legend>Que seriez-vous ?</legend>
+
+      <div class="inputBox">
+          <input type="text" type="email" name=""  id="email" required="required">
+          <label for="email">Email </label></div>
+
+      <div class="inputBox">
+          <input type="text" name="" id="analogies" required="required">
+          <label for="analogies">Si j'étais...</label></div>
+
+      <div class="inputBox">
+          <input type="text" name="" id="valeurAnalogies" required="required">
+          <label for="valeurAnalogies">je serais...</label></div>
+
+      <div class="inputBox">
+          <input type="text" name="" id="explications" required="required">
+          <label for="explications">Pourquoi ?</label>
+      </div>
+
+      <div class="inputBox">
+          <input type="text" name="" id="images" required="required">
+          <label for="images">Lien de l'image</label>
+      </div>
+
+      <input type="submit" onclick="send_form()" name="" id="Envoi">
+</form>
+
+&copy; Mila
+
+
+
+<script src="script.js"></script>
+</body>
+
+<footer>
+  <a href="javascript:void(0)" id="mentionsLegales">Mentions légales</a>
+  <div id="popup-overlay" class="hidden">
+    <div class="popup-content">
+      <h3>Mentions légales</h3><br>
+      <div>
+        <a href="https://unsplash.com/fr" class="credit">Unsplash</a>
+        <p class="between">-</p>
+        <a href="https://pixabay.com/fr/" class="credit">Pixabay</a>
+        <p class="between">-</p>
+        <a href="https://www.allocine.fr/article/fichearticle_gen_carticle=18689414.html" class="credit">Le Château ambulant</a>
+        <p class="between">-</p>
+        <a href="https://www.lepetitprince.com/" class="credit">Le Petit Prince</a>
+      </div><br>
+      <p class="txtMentions">Toutes les images utilisées sur cette page sont libres de droit pour usage
+        personnel, et ne feront jamais l'objet d'une commercialisation.</p><br>
+
+      <div class="liens">
+        <a href="https://fonts.google.com" class="credit">Google Fonts</a>
+      </div><br>
+      <p class="txtMentions">Lien vers le site utilisé pour les différentes typographies du portrait chinois.
+      </p><br>
+
+      <p class="txtMentions">Hébergeur : Université Gustave Eiffel - 2 rue Albert Einstein, 77420
+        Champs-sur-Marne, France.</p><br>
+      <p class="txtMentions">Les fichiers détenus par l'UPEM comportant des données à caractère personnel ne seront jamais transmis à des tiers et ne
+        feront jamais l'objet d'une commercialisation.</p><br>
+      <p class="txtMentions">Tout auteur est titulaire d'un droit de propriété sur son œuvre qui consiste à en contrôler toutes les exploitations. Lui seul peut autoriser les exploitations de son œuvre telles que la représentation, la reproduction, ainsi que des transpositions comme la traduction, l'adaptation, la transformation et l'arrangement (art.L.122-4 du code de la propriété intellectuelle).</p><br>
+      <p class="txtMentions">Tout de même, conformément à l'article 15 du Règlement général sur la protection des données (RGPD), vous disposez d'un droit d'accès aux informations vous concernant. Si vous trouvez que ces informations sont incorrectes, l'article 16 du RGPD vous permet de les modifier ou de les supprimer. Dans ce cas, merci de contacter le directeur de la communication : com@univ-eiffel.fr.</p>
+    </div>
+      <p><a href="javascript:void(0)" class="popup-exit">X</a></p>
+    </div>
+  </div>
+</footer>
+
+
+</html>

@@ -1,0 +1,370 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html, body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    background-color: black;
+    cursor: pointer;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 110px;
+    font-family: 'Permanent Marker', cursive;
+    -webkit-text-stroke: 3px rgb(57, 79, 45);
+    color: black;
+    text-shadow:
+       5px 5px 0 rgb(39, 54, 31),
+     -2px -2px 0 rgb(39, 54, 31),  
+      2px -2px 0 rgb(39, 54, 31),
+      -2px 2px 0 rgb(39, 54, 31),
+       2px 2px 0 rgb(39, 54, 31);
+}
+
+h2 {
+    font-family: 'Permanent Marker', cursive;
+    color: rgb(57, 79, 45);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+
+hr {
+    margin: auto;
+    border-color: rgb(39, 54, 31);
+    width: 80vh;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background: black;
+    padding: 25px;
+    text-align: center;  
+}
+
+.active {
+    background: rgb(57, 79, 45);
+    color: black;
+}
+
+header nav a {
+    padding: 10px;
+    color: rgb(57, 79, 45);
+    font-size: 1.5em;
+    border-radius: 10px;
+    font-family: 'Permanent Marker', cursive;
+}
+
+header nav a:hover {
+     background: rgb(57, 79, 45);
+     color: black;
+}
+.section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1em;
+    color: #fff;
+    padding: 20px;
+    transition: 0.5s;
+    background-color: black;
+}
+
+.accueil {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1em;
+    color: #fff;
+    padding: 20px;
+    transition: 0.5s;
+    background-color: black;
+    background-image: url(fond.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section:nth-of-type(odd) {
+    background: black;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    margin: 5px;
+}
+
+img {
+    width: 70vh;
+    min-width: 50vh;
+    border-radius: 18px;
+    margin-right: 30px;
+    border: solid 4px rgb(57, 79, 45);
+    padding: 8px;
+}
+
+.texte {
+    color: black;
+    font-family: 'Itim', cursive;
+    display: flex;
+    margin: 60px;
+    font-size: 1.4em;
+    max-width: 600px;
+    background-color: rgb(57, 79, 45);
+    margin-top: 10vh;
+    border-radius: 12px;
+    padding: 6px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+form
+{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+    background: rgb(57, 79, 45);
+    width: 400px;
+    color: black;
+    border-radius: 12px;
+    padding: 20px;
+    margin-top: 15vh;
+    margin-bottom: 10vh;
+    border: solid 5px rgb(39, 54, 31);
+}
+
+legend {
+    font-size: 30px;
+    padding-top: 20px;
+    color: black;
+    font-family: 'Permanent Marker', cursive;
+}
+
+input[type="submit"] {
+    background-color: black;
+    font-size: 1rem ;
+    color: rgb(57, 79, 45);
+    border: solid black 1.5px;
+    border-radius: 3px;
+    padding: 5px;
+    margin-bottom: 20px;
+    font-family: 'Permanent Marker', cursive;
+}
+
+input[type="submit"]:hover {
+    color: black;
+    background-color: rgb(57, 79, 45);
+    transition: 0.5s;
+}
+
+.inputBox   
+{
+    position: relative;
+    width: 250px;
+}
+.inputBox input
+{
+    width: 100%;
+    padding: 10px;
+    border: 1.5px solid black;
+    background: rgb(57, 79, 45);
+    border-radius: 5px;
+    outline: none;
+    color: black;
+    font-size: 1em;
+    transition: 0.5s;
+}
+.inputBox label
+{
+    position: absolute;
+    left: 0;
+    padding: 10px;
+    pointer-events: none;
+    font-size: 1em;
+    color: rgb(39, 54, 31);
+    transition: 0.5s;
+}
+.inputBox input:valid ~ label,
+.inputBox input:focus ~ label
+{
+    color: black;
+    transform: translateX(10px) translateY(-7px);
+    font-size: 0.75em;
+    padding: 0 10px;
+    background: rgb(57, 79, 45);
+    letter-spacing: 0.2em;
+}
+
+.inputBox input:valid,
+.inputBox input:focus
+{
+    border: 2px solid black;
+}
+
+.section:nth-child(even) img {
+    order: 1;
+    margin-left: 30px;
+}
+
+.section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1em;
+    color: #fff;
+    padding: 20px;
+    transition: 0.5s;
+    background-color: black;
+    position: relative; /* Add this line */
+}
+
+.custom-span {
+    font-size: 40px;
+    color: green;
+    font-family: 'Permanent Marker', cursive;
+    -webkit-text-stroke: 2px rgb(57, 79, 45);
+    color: black;
+    text-shadow:
+        3px 3px 0 rgb(39, 54, 31),
+        -1px -1px 0 rgb(39, 54, 31),  
+        1px -1px 0 rgb(39, 54, 31),
+        -1px 1px 0 rgb(39, 54, 31),
+        1px 1px 0 rgb(39, 54, 31);
+    position: absolute;  
+    top: 25%;
+    left: 66%;
+    transform: translate(-50%, -50%); 
+    max-width: 535px;
+    min-width: 535px;
+}
+
+.section:nth-child(even) .custom-span {
+    top: 24%;
+    left: 33%;
+    transform: translate(-50%, -50%); 
+    max-width: 535px;
+    min-width: 535px;
+}
+
+footer {
+    color: #fff;
+    height: 50px;
+}
+
+#popup-overlay {
+    display: none;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.7);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    max-width: 600px;
+    padding: 30px;
+    box-sizing: border-box;
+    background: black;
+    position: relative;
+    border-radius: 15px;
+    border: solid 3px rgb(57, 79, 45);
+}
+
+.popup-exit {
+    display: flex;
+    margin-top: -35vh;
+    margin-left: 2vh;
+    font-size: 20px;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: 'Permanent Marker', cursive;
+    color: rgb(57, 79, 45);
+    font-size: 40px;
+}
+
+.popup-exit:hover {
+    color: #333;
+    transition: 0.2s;
+}
+
+#mentionsLegales {
+    font-family: 'Permanent Marker', cursive;
+    color: rgb(57, 79, 45);
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+#mentionsLegales:hover {
+    color: #333;
+    transition: 0.2s;
+}
+
+p {
+    color: #333;
+    font-family: 'Itim', cursive;
+}
+
+h3 {
+    font-family: 'Permanent Marker', cursive;
+    color: rgb(57, 79, 45);
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+
+.credit, .between{
+    text-decoration: none;
+    font-family: 'Permanent Marker', cursive;
+    color: rgb(57, 79, 45);
+    display: inline-block;
+}
+
+.credit:hover {
+    color: #333;
+    transition: 0.2s;
+}
+
+.section {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.section.slide-in {
+    opacity: 1;
+    transform: translateX(0);
+}

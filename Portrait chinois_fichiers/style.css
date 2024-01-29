@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background: cadetblue;
+    padding: 25px;
+    text-align: center;  
+}
+
+header nav a {
+    padding: 10px;
+    color: #fff;
+    font-size: 20px;
+    text-transform: capitalize;
+    border-radius: 10px;
+}
+
+header nav a:hover {
+     background: #fff;
+     color: cadetblue;
+}
+.section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1em;
+    color: #fff;
+    padding: 20px;
+    transition: 0.5s;
+    background-color: black;
+}
+
+.accueil {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1em;
+    color: #fff;
+    padding: 20px;
+    transition: 0.5s;
+    background-color: black;
+}
+
+.section:nth-child(odd) {
+    background: black;
+}
+
+  nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    margin: 5px;
+  }
+
+.popup {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 333;
+}
+
+.popup-visible {
+    display: block;
+}
+
+.popup-invisible {
+    display: none;
+}
+
+img {
+    width: 70vh;
+    border-radius: 10px;
+    margin-right: 30px;
+}
+
+p {
+    font-family: fantasy;
+    display: flex;
+    margin: 60px;
+    padding-top: 10vh;
+    font-size: 20px
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+form
+{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    background: cadetblue;
+    width: 300px;
+    color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 25vh;
+    margin-bottom: 25vh;
+}
+
+legend {
+    font-size: 20px;
+}
+
+input[type="submit"] {
+    background-color: white;
+    font-size: 1rem ;
+    color: cadetblue;
+    border: solid white 1px;
+    border-radius: 3px;
+    padding: 5px;
+}
+
+input[type="submit"]:hover {
+    color: #fff;
+    background-color: cadetblue;
+    transition: 0.5s;
+}
+
+.inputBox   
+{
+    position: relative;
+    width: 250px;
+}
+.inputBox input
+{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.66);
+    background: cadetblue;
+    border-radius: 5px;
+    outline: none;
+    color: #fff;
+    font-size: 1em;
+    transition: 0.5s;
+}
+.inputBox label
+{
+    position: absolute;
+    left: 0;
+    padding: 10px;
+    pointer-events: none;
+    font-size: 1em;
+    color: rgba(255, 255, 255, 0.66);
+    transition: 0.5s;
+}
+.inputBox input:valid ~ label,
+.inputBox input:focus ~ label
+{
+    color: white;
+    transform: translateX(10px) translateY(-7px);
+    font-size: 0.75em;
+    padding: 0 10px;
+    background: cadetblue;
+    letter-spacing: 0.2em;
+}
+
+.inputBox input:valid,
+.inputBox input:focus
+{
+    border: 1.5px solid white;
+}
+
+.section:nth-child(odd) img {
+    order: 1;
+    margin-left: 30px;
+}
+
+.active {
+    background-image: url(fond.webp);
+}
